@@ -116,6 +116,8 @@ button.main {
 
 <h2>Simulador de prazos 📅</h2>
 
+
+
 <label>Modo de simulação</label>
 <select id="modo" onchange="ajustarData()">
     <option value="forward">Quando chega a partir da data</option>
@@ -151,6 +153,11 @@ button.main {
     <div id="calendario" class="calendario"></div>
     <button class="nav" onclick="mudarMes(1)">▶</button>
 </div>
+
+<h3>Explicação dos modos:</h3>
+
+<p>O modo "Quando chega a partir da data" serve para simular a partir da data quantos dias somados a data inserida que o pedido irá chegar.</p>
+<p>O modo "Quando pedir a partir da data" serve para simular quantos dias antes tem que ser feito o pedido a partir da data que é desejado que o pedido chegue.</p>
 
 <!-- ================= JS ================= -->
 <script>
